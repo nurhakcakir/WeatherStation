@@ -1,9 +1,9 @@
 /* ESP32 - DHT (11/22) + DS3231 RTC + SSD1306 OLED + Firebase RTDB (+Blynk optional)
-   Her 60s: RTC time al, DHT oku, OLED'e yaz, Firebase'e sayısal olarak yaz.
-   NOT: DHTTYPE'ı kullandığın sensöre göre ayarla: DHT11 veya DHT22.
+   Per 60s: Take RTC time, read DHT, write to OLED, write to Firebase.
+   NOTE: edit DHTTYPE: DHT11 or DHT22.
 */
 
-/* Blynk IoT (Console'dan al) - gerekli değilse Blynk kısmını kaldırabilirsin */
+/* From Blynk IoT (Take from Console) - (you can erase if you don't want mobil application) */
 #define BLYNK_TEMPLATE_ID   "TMPL647V3aX05"
 #define BLYNK_TEMPLATE_NAME "TEMPPROJECT"
 #define BLYNK_AUTH_TOKEN    "EkzaELEiyJr4CBiXgRox8omvGicj7pLP"
@@ -23,8 +23,8 @@
 #include "addons/RTDBHelper.h"
 
 // ---------- CONFIG ----------
-const char* WIFI_SSID = "nurss";
-const char* WIFI_PASSWORD = "nurss123";
+const char* WIFI_SSID = "nurss";     //Your wi-fi name
+const char* WIFI_PASSWORD = "nurss123";     //Your wi-fi password
 
 #define API_KEY       "AIzaSyBohqbLoE33LVaahqRCffYA9_4P5PqKstY"
 #define DATABASE_URL  "https://tempproject-f7b51-default-rtdb.europe-west1.firebasedatabase.app/"

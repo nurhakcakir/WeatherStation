@@ -1,3 +1,5 @@
+Thanks to this project, you can write the air temperature and humidity values ​​of a remote location to a database (Firebase) along with the last measurement date and share them with users(Web adress).
+
 Weather Station Project Requirements: 
 1 Piece ESP32, 
 RTC Module (I used DS3231 time module),
